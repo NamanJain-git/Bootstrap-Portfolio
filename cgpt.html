@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MERN Developer Portfolio</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <style>
+    /* General */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3 {
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* Home Section */
+    .home {
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      color: white;
+      padding: 80px 20px;
+    }
+
+    .home h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .home h3 {
+      font-weight: 400;
+    }
+
+    /* About Section */
+    .about {
+      background-color: #ffffff;
+    }
+
+    .about .card {
+      border: none;
+      transition: transform 0.3s ease;
+    }
+
+    .about .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Portfolio Section */
+    .portfolio {
+      background-color: #e3f2fd;
+    }
+
+    .portfolio-para {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    /* Contact Section */
+    .contact {
+      background-color: #fff;
+    }
+
+    .contact .form-control {
+      margin-bottom: 20px;
+      padding: 10px 15px;
+    }
+
+    .contact .btn-primary {
+      background-color: #007bff;
+      padding: 10px 30px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1c1c1c;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      .home h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Section -->
+  <section class="home text-center">
+    <div class="container">
+      <h1>I'm a MERN Stack Developer</h1>
+      <h3>Learning to Build Responsive Web Apps</h3>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container text-center">
+      <h1>About</h1>
+      <p class="mb-5">A brief intro to my skills and strengths.</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-3">
+          <div class="card p-3">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, React.js</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <h3>Backend</h3>
+            <p>Node.js, Express.js, REST APIs</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <h3>Database</h3>
+            <p>MongoDB, Mongoose, Firebase</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio text-center">
+    <div class="container">
+      <h1>Portfolio</h1>
+      <p class="portfolio-para">Here are some of the projects I’ve worked on during my MERN Stack journey, showing frontend and backend integration.</p>
+      <ul class="list-inline mb-4">
+        <li class="list-inline-item"><a href="#" class="btn btn-outline-dark btn-sm">All</a></li>
+        <li class="list-inline-item"><a href="#" class="btn btn-outline-dark btn-sm">Web</a></li>
+        <li class="list-inline-item"><a href="#" class="btn btn-outline-dark btn-sm">App</a></li>
+      </ul>
+      <!-- Example Projects (You can replace these with your own) -->
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h4>Netflix Clone</h4>
+            <p>Built using React and Firebase</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h4>Portfolio Website</h4>
+            <p>Responsive site with Bootstrap</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h4>To-Do App</h4>
+            <p>Full-stack MERN CRUD app</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <h1 class="text-center mb-4">Contact</h1>
+      <form class="mx-auto" style="max-width: 600px;">
+        <input type="text" class="form-control" placeholder="Enter your name" required>
+        <input type="email" class="form-control" placeholder="Enter your email" required>
+        <textarea class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+        <div class="text-center mt-3">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="mb-0">© 2025 Naman Jain | MERN Stack Developer</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .contact-section {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.info-item i {
+  font-size: 24px;
+  color: #0d6efd;
+  margin-right: 15px;
+  background: #e9f3ff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  margin-top: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group input {
+  flex: 1;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+button {
+  background: #0d6efd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+button:hover {
+  background: #0b5ed7;
+}
+
+</style>
+<body>
+    
+<section class="contact-section">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+
+    <div class="contact-box">
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Address</h4>
+            <p>A108 Adam Street, New York, NY 535022</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <h4>Call Us</h4>
+            <p>+1 5589 55488 55</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email Us</h4>
+            <p>info@example.com</p>
+          </div>
+        </div>
+        <div class="map">
+          <iframe src="https://maps.google.com/maps?q=Downtown%20Conference%20Center&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+          </div>
+          <input type="text" placeholder="Subject" class="full-width">
+          <textarea rows="6" placeholder="Message" class="full-width"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+
