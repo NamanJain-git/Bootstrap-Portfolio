@@ -14,4 +14,4 @@ Information Architecture
 •	Footer- copyright, quick links.
 
 
-Link()
+Link( https://namanjain-git.github.io/Bootstrap-Portfolio/)
